@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated Web Design</title>
+  <style>
+    /* Full-screen gradient background */
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #a18cd1, #fbc2eb);
+      background-size: 400% 400%;
+      animation: gradient 8s ease infinite;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /* Animation for background gradient */
+    @keyframes gradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Floating title text */
+    h1 {
+      font-size: 3em;
+      color: white;
+      text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+      animation: float 3s ease-in-out infinite;
+    }
+
+    /* Floating animation */
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-20px); }
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to My HTML5 World 🌐</h1>
+</body>
+</html>
