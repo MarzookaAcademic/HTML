@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Neon Pulse — Interactive HTML5 Button</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <h1 class="title">Neon Pulse</h1>
+
+    <!-- Canvas for background particles -->
+    <canvas id="bgCanvas" aria-hidden="true"></canvas>
+
+    <!-- Center content -->
+    <section class="content">
+      <button id="neonBtn" class="neon-btn" aria-pressed="false">
+        <span class="label">Press Me</span>
+      </button>
+
+      <p class="desc">Click or press and hold the button to change color, pulse and spawn particles.</p>
+    </section>
+
+    <footer class="footer">
+      <small>Made with HTML5 Canvas, CSS, and vanilla JS • Save as a static site</small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
